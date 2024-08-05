@@ -34,9 +34,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.762,
-          "height": 1.524,
-          "width": 1.524
+          "drill": 0.0,
+          "height": 1.55,
+          "width": 0.3
         },
         "silk_line_width": 0.15239999999999998,
         "silk_text_italic": false,
@@ -45,6 +45,7 @@
         "silk_text_thickness": 0.15239999999999998,
         "silk_text_upright": false,
         "zones": {
+          "45_degree_only": false,
           "min_clearance": 0.19999999999999998
         }
       },
@@ -62,26 +63,20 @@
       "rule_severities": {
         "annular_width": "error",
         "clearance": "error",
-        "connection_width": "warning",
         "copper_edge_clearance": "error",
-        "copper_sliver": "warning",
         "courtyards_overlap": "error",
         "diff_pair_gap_out_of_range": "error",
         "diff_pair_uncoupled_length_too_long": "error",
         "drill_out_of_range": "error",
         "duplicate_footprints": "warning",
         "extra_footprint": "warning",
-        "footprint": "error",
         "footprint_type_mismatch": "ignore",
         "hole_clearance": "error",
         "hole_near_hole": "error",
         "invalid_outline": "error",
-        "isolated_copper": "warning",
         "item_on_disabled_layer": "error",
         "items_not_allowed": "error",
         "length_out_of_range": "error",
-        "lib_footprint_issues": "warning",
-        "lib_footprint_mismatch": "warning",
         "malformed_courtyard": "error",
         "microvia_drill_out_of_range": "error",
         "missing_courtyard": "ignore",
@@ -91,14 +86,9 @@
         "padstack": "warning",
         "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
-        "silk_edge_clearance": "warning",
         "silk_over_copper": "warning",
         "silk_overlap": "warning",
         "skew_out_of_range": "error",
-        "solder_mask_bridge": "error",
-        "starved_thermal": "error",
-        "text_height": "warning",
-        "text_thickness": "warning",
         "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
         "track_dangling": "warning",
@@ -107,9 +97,12 @@
         "unconnected_items": "error",
         "unresolved_variable": "error",
         "via_dangling": "warning",
+        "zone_has_empty_net": "error",
         "zones_intersect": "error"
       },
       "rules": {
+        "allow_blind_buried_vias": false,
+        "allow_microvias": false,
         "max_error": 0.005,
         "min_clearance": 0.0,
         "min_connection": 0.0,
@@ -187,17 +180,17 @@
         {
           "diameter": 0.4,
           "drill": 0.3
-        },
-        {
-          "diameter": 0.6858,
-          "drill": 0.3302
-        },
-        {
-          "diameter": 0.889,
-          "drill": 0.381
         }
       ],
-      "zones_allow_external_fillets": false
+      "zones_allow_external_fillets": false,
+      "zones_use_no_outline": true
+    },
+    "ipc2581": {
+      "dist": "",
+      "distpn": "",
+      "internal_id": "",
+      "mfg": "",
+      "mpn": ""
     },
     "layer_presets": [],
     "viewports": []
@@ -428,7 +421,7 @@
   "net_settings": {
     "classes": [
       {
-        "bus_width": 12,
+        "bus_width": 12.0,
         "clearance": 0.127,
         "diff_pair_gap": 0.2032,
         "diff_pair_via_gap": 0.25,
@@ -440,12 +433,12 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.254,
-        "via_diameter": 0.6858,
-        "via_drill": 0.3302,
-        "wire_width": 6
+        "via_diameter": 0.4,
+        "via_drill": 0.3,
+        "wire_width": 6.0
       },
       {
-        "bus_width": 12,
+        "bus_width": 12.0,
         "clearance": 0.127,
         "diff_pair_gap": 0.2032,
         "diff_pair_via_gap": 0.25,
@@ -454,34 +447,311 @@
         "microvia_diameter": 0.6858,
         "microvia_drill": 0.3302,
         "name": "50Ohm",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "nets": [],
+        "pcb_color": "rgb(194, 0, 194)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.1565,
-        "via_diameter": 0.6858,
-        "via_drill": 0.3302,
-        "wire_width": 6
+        "via_diameter": 0.4,
+        "via_drill": 0.3,
+        "wire_width": 6.0
+      },
+      {
+        "bus_width": 12.0,
+        "clearance": 0.127,
+        "diff_pair_gap": 0.2032,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.1564,
+        "line_style": 0,
+        "microvia_diameter": 0.6858,
+        "microvia_drill": 0.3302,
+        "name": "GND",
+        "nets": [],
+        "pcb_color": "rgb(132, 132, 132)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.254,
+        "via_diameter": 0.4,
+        "via_drill": 0.3,
+        "wire_width": 6.0
+      },
+      {
+        "bus_width": 12.0,
+        "clearance": 0.127,
+        "diff_pair_gap": 0.2032,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.1564,
+        "line_style": 0,
+        "microvia_diameter": 0.6858,
+        "microvia_drill": 0.3302,
+        "name": "GPIO",
+        "nets": [],
+        "pcb_color": "rgb(0, 194, 0)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.254,
+        "via_diameter": 0.4,
+        "via_drill": 0.3,
+        "wire_width": 6.0
+      },
+      {
+        "bus_width": 12.0,
+        "clearance": 0.127,
+        "diff_pair_gap": 0.2032,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.1564,
+        "line_style": 0,
+        "microvia_diameter": 0.6858,
+        "microvia_drill": 0.3302,
+        "name": "I2C",
+        "nets": [],
+        "pcb_color": "rgb(0, 255, 255)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.254,
+        "via_diameter": 0.4,
+        "via_drill": 0.3,
+        "wire_width": 6.0
+      },
+      {
+        "bus_width": 12.0,
+        "clearance": 0.127,
+        "diff_pair_gap": 0.2032,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.1564,
+        "line_style": 0,
+        "microvia_diameter": 0.6858,
+        "microvia_drill": 0.3302,
+        "name": "PWR",
+        "nets": [],
+        "pcb_color": "rgb(255, 0, 0)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.254,
+        "via_diameter": 0.4,
+        "via_drill": 0.3,
+        "wire_width": 6.0
+      },
+      {
+        "bus_width": 12.0,
+        "clearance": 0.127,
+        "diff_pair_gap": 0.2032,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.1564,
+        "line_style": 0,
+        "microvia_diameter": 0.6858,
+        "microvia_drill": 0.3302,
+        "name": "SDIO",
+        "nets": [],
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.254,
+        "via_diameter": 0.4,
+        "via_drill": 0.3,
+        "wire_width": 6.0
+      },
+      {
+        "bus_width": 12.0,
+        "clearance": 0.127,
+        "diff_pair_gap": 0.2032,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.1564,
+        "line_style": 0,
+        "microvia_diameter": 0.6858,
+        "microvia_drill": 0.3302,
+        "name": "SWD",
+        "nets": [],
+        "pcb_color": "rgb(0, 194, 194)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.254,
+        "via_diameter": 0.4,
+        "via_drill": 0.3,
+        "wire_width": 6.0
+      },
+      {
+        "bus_width": 12.0,
+        "clearance": 0.127,
+        "diff_pair_gap": 0.2032,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.1564,
+        "line_style": 0,
+        "microvia_diameter": 0.6858,
+        "microvia_drill": 0.3302,
+        "name": "USB",
+        "nets": [],
+        "pcb_color": "rgb(255, 153, 0)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.254,
+        "via_diameter": 0.4,
+        "via_drill": 0.3,
+        "wire_width": 6.0
       }
     ],
     "meta": {
-      "version": 3
+      "version": 2
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "50Ohm",
+        "pattern": "/mcu/SDIO_CMD"
+      },
+      {
+        "netclass": "50Ohm",
+        "pattern": "/mcu/SDIO_D1"
+      },
+      {
+        "netclass": "50Ohm",
+        "pattern": "/mcu/SDIO_CLK"
+      },
+      {
+        "netclass": "50Ohm",
+        "pattern": "/mcu/SDIO_D3"
+      },
+      {
+        "netclass": "50Ohm",
+        "pattern": "/mcu/SDIO_D2"
+      },
+      {
+        "netclass": "50Ohm",
+        "pattern": "/mcu/SDIO_D0"
+      },
+      {
+        "netclass": "I2C",
+        "pattern": "/I2C_SDA"
+      },
+      {
+        "netclass": "I2C",
+        "pattern": "/I2C_SCL"
+      },
+      {
+        "netclass": "PWR",
+        "pattern": "+3V3"
+      },
+      {
+        "netclass": "GND",
+        "pattern": "GND"
+      },
+      {
+        "netclass": "GPIO",
+        "pattern": "HDR*"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "USB+"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "/Power&USB/USB+"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "/Power&USB/USB-"
+      },
+      {
+        "netclass": "PWR",
+        "pattern": "+5V"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "/Power&USB/USB_PreDiode-"
+      },
+      {
+        "netclass": "USB",
+        "pattern": "/Power&USB/USB_PreDiode+"
+      },
+      {
+        "netclass": "PWR",
+        "pattern": "VDC"
+      },
+      {
+        "netclass": "PWR",
+        "pattern": "/Power&USB/IN_LDO"
+      },
+      {
+        "netclass": "SWD",
+        "pattern": "/mcu/SW*"
+      },
+      {
+        "netclass": "SWD",
+        "pattern": "/mcu/RST"
+      },
+      {
+        "netclass": "PWR",
+        "pattern": "VDDA"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
       "gencad": "",
       "idf": "",
       "netlist": "",
+      "plot": "",
+      "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "Roboty_rev1.step",
+      "svg": "",
       "vrml": ""
     },
     "page_layout_descr_file": ""
   },
   "schematic": {
     "annotate_start_num": 0,
+    "bom_fmt_presets": [],
+    "bom_fmt_settings": {
+      "field_delimiter": ",",
+      "keep_line_breaks": false,
+      "keep_tabs": false,
+      "name": "CSV",
+      "ref_delimiter": ",",
+      "ref_range_delimiter": "",
+      "string_delimiter": "\""
+    },
+    "bom_presets": [],
+    "bom_settings": {
+      "exclude_dnp": false,
+      "fields_ordered": [
+        {
+          "group_by": false,
+          "label": "Reference",
+          "name": "Reference",
+          "show": true
+        },
+        {
+          "group_by": true,
+          "label": "Value",
+          "name": "Value",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Datasheet",
+          "name": "Datasheet",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Footprint",
+          "name": "Footprint",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Qty",
+          "name": "${QUANTITY}",
+          "show": true
+        },
+        {
+          "group_by": true,
+          "label": "DNP",
+          "name": "${DNP}",
+          "show": true
+        }
+      ],
+      "filter_string": "",
+      "group_symbols": true,
+      "name": "Grouped By Value",
+      "sort_asc": true,
+      "sort_field": "Référence"
+    },
+    "connection_grid_size": 50.0,
     "drawing": {
       "dashed_lines_dash_length_ratio": 12.0,
       "dashed_lines_gap_length_ratio": 3.0,
@@ -495,6 +765,11 @@
       "intersheets_ref_suffix": "",
       "junction_size_choice": 3,
       "label_size_ratio": 0.375,
+      "operating_point_overlay_i_precision": 3,
+      "operating_point_overlay_i_range": "~A",
+      "operating_point_overlay_v_precision": 3,
+      "operating_point_overlay_v_range": "~V",
+      "overbar_offset_ratio": 1.23,
       "pin_symbol_size": 25.0,
       "text_offset_ratio": 0.15
     },
@@ -504,12 +779,21 @@
       "version": 1
     },
     "net_format_name": "",
+    "ngspice": {
+      "fix_include_paths": true,
+      "meta": {
+        "version": 0
+      },
+      "model_mode": 0,
+      "workbook_filename": ""
+    },
     "page_layout_descr_file": "",
     "plot_directory": "",
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
     "spice_model_current_sheet_as_root": true,
     "spice_save_all_currents": false,
+    "spice_save_all_dissipations": false,
     "spice_save_all_voltages": false,
     "subpart_first_id": 65,
     "subpart_id_separator": 0

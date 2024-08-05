@@ -1,0 +1,147 @@
+<design>Roboty_rev1.hyp</design>
+<message>HyperLynx SI/PI/Thermal VX.2.10</message>
+<message>[VX2.10 build 19246144] Install Id: 2373006</message>
+<message>01/31/24 22:44:52</message>
+<message>Design: Roboty_rev1.hyp</message>
+<message>Design folder: C:\Users\Pierre-Anthony\Documents\Roboty\HW\Roboty_rev2_\</message>
+<message>Designer: Pierre-Anthony</message>
+<header>Simulation parameters</header>
+<debug ident=1>Fr.Sweep from 1.0MHz to 150.0MHz</debug>
+<debug ident=1>Adaptive sweep; accuracy level 2, max 50 points</debug>
+<debug ident=1>Export Z-matrix</debug>
+<debug ident=1>Normalization is ON</debug>
+<debug ident=1>Normalization impedance 100.0milliohms</debug>
+<debug ident=1>Include mounting is ON</debug>
+<debug ident=1>Force passivity is ON</debug>
+<debug ident=1>Stitching via optimization is OFF</debug>
+<debug ident=1>Get IC-pin virtual reference layers automatically</debug>
+<debug ident=1>Include IC-pin outer sections impedance OFF</debug>
+<debug ident=1>Using connection point search distance of <length>0.02</length></debug>
+<message>Quick Decoupling Analysis</message>
+<message></message>
+<info>Preparing Via Collector...</info>
+<debug>Removing ViaCollector data of previous session...</debug>
+<debug>Memory status - allocated:961388544 address space used:1387347968 b</debug>
+<info>Collecting decoupling-capacitor circuits...</info>
+<info>Processing decoupling capacitors for all nets...</info>
+<header>Processing decoupling capacitor <link type=LOCATION x=0.137575 y=0.0779>C3</link>, mounted on top.</header>
+<warning ident=1>Pin <link type=LOCATION x=0.137575 y=0.0779>C3.1</link> shares its mounting with other pins.</warning>
+<debug ident=1>The set of 1 PIVias has been created for pin <link type=LOCATION x=0.137575 y=0.0779>C3.1</link>.</debug>
+<warning ident=1>Pin <link type=LOCATION x=0.139125 y=0.0779>C3.2</link> shares its mounting with other pins.</warning>
+<debug ident=1>The set of 1 PIVias has been created for pin <link type=LOCATION x=0.139125 y=0.0779>C3.2</link>.</debug>
+<debug ident=1>Guess capacitor body width 0.775 mm as fraction of length</debug>
+<header>Processing decoupling capacitor <link type=LOCATION x=0.1123 y=0.08275>C4</link>, mounted on bottom.</header>
+<debug ident=1>The set of 1 PIVias has been created for pin <link type=LOCATION x=0.1123 y=0.08275>C4.1</link>.</debug>
+<debug ident=1>The set of 1 PIVias has been created for pin <link type=LOCATION x=0.1123 y=0.0843>C4.2</link>.</debug>
+<debug ident=1>Guess capacitor body width 0.775 mm as fraction of length</debug>
+<header>Processing decoupling capacitor <link type=LOCATION x=0.120225 y=0.08175>C6</link>, mounted on top.</header>
+<warning ident=1>Explicit connection of the pin <link type=LOCATION x=0.120225 y=0.08175>C6.1</link> to metal area is not found.</warning>
+<warning ident=1>Virtual connection to appropriate plane is guessed.</warning>
+<debug ident=1>The set of 1 PIVias has been created for pin <link type=LOCATION x=0.120225 y=0.08175>C6.1</link>.</debug>
+<debug ident=1>The set of 1 PIVias has been created for pin <link type=LOCATION x=0.121775 y=0.08175>C6.2</link>.</debug>
+<debug ident=1>Guess capacitor body width 0.775 mm as fraction of length</debug>
+<header>Processing decoupling capacitor <link type=LOCATION x=0.126985 y=0.088585>C7</link>, mounted on top.</header>
+<warning ident=1>Pin <link type=LOCATION x=0.126985 y=0.088585>C7.1</link> shares its mounting with other pins.</warning>
+<debug ident=1>The set of 1 PIVias has been created for pin <link type=LOCATION x=0.126985 y=0.088585>C7.1</link>.</debug>
+<warning ident=1>Pin <link type=LOCATION x=0.125435 y=0.088585>C7.2</link> shares its mounting with other pins.</warning>
+<debug ident=1>The set of 1 PIVias has been created for pin <link type=LOCATION x=0.125435 y=0.088585>C7.2</link>.</debug>
+<debug ident=1>Guess capacitor body width 0.775 mm as fraction of length</debug>
+<header>Processing decoupling capacitor <link type=LOCATION x=0.127025 y=0.08975>C8</link>, mounted on top.</header>
+<warning ident=1>Pin <link type=LOCATION x=0.127025 y=0.08975>C8.1</link> shares its mounting with other pins.</warning>
+<debug ident=1>Reuse the set of 1 PIVias for pin <link type=LOCATION x=0.127025 y=0.08975>C8.1</link>.</debug>
+<warning ident=1>Pin <link type=LOCATION x=0.125475 y=0.08975>C8.2</link> shares its mounting with other pins.</warning>
+<debug ident=1>Reuse the set of 1 PIVias for pin <link type=LOCATION x=0.125475 y=0.08975>C8.2</link>.</debug>
+<debug ident=1>Guess capacitor body width 0.775 mm as fraction of length</debug>
+<header>Processing decoupling capacitor <link type=LOCATION x=0.127985 y=0.078085>C9</link>, mounted on top.</header>
+<warning ident=1>Pin <link type=LOCATION x=0.127985 y=0.078085>C9.1</link> shares its mounting with other pins.</warning>
+<debug ident=1>The set of 1 PIVias has been created for pin <link type=LOCATION x=0.127985 y=0.078085>C9.1</link>.</debug>
+<debug ident=1>The set of 1 PIVias has been created for pin <link type=LOCATION x=0.126435 y=0.078085>C9.2</link>.</debug>
+<debug ident=1>Guess capacitor body width 0.775 mm as fraction of length</debug>
+<header>Processing decoupling capacitor <link type=LOCATION x=0.1398 y=0.088625>C10</link>, mounted on top.</header>
+<warning ident=1>Pin <link type=LOCATION x=0.1398 y=0.088625>C10.1</link> shares its mounting with other pins.</warning>
+<debug ident=1>The set of 1 PIVias has been created for pin <link type=LOCATION x=0.1398 y=0.088625>C10.1</link>.</debug>
+<warning ident=1>Pin <link type=LOCATION x=0.1398 y=0.090175>C10.2</link> shares its mounting with other pins.</warning>
+<debug ident=1>The set of 1 PIVias has been created for pin <link type=LOCATION x=0.1398 y=0.090175>C10.2</link>.</debug>
+<debug ident=1>Guess capacitor body width 0.775 mm as fraction of length</debug>
+<header>Processing decoupling capacitor <link type=LOCATION x=0.1136 y=0.08275>C11</link>, mounted on bottom.</header>
+<debug ident=1>The set of 1 PIVias has been created for pin <link type=LOCATION x=0.1136 y=0.08275>C11.1</link>.</debug>
+<debug ident=1>The set of 1 PIVias has been created for pin <link type=LOCATION x=0.1136 y=0.0843>C11.2</link>.</debug>
+<debug ident=1>Guess capacitor body width 0.775 mm as fraction of length</debug>
+<header>Processing decoupling capacitor <link type=LOCATION x=0.1385 y=0.088725>C12</link>, mounted on top.</header>
+<warning ident=1>Pin <link type=LOCATION x=0.1385 y=0.088725>C12.1</link> shares its mounting with other pins.</warning>
+<debug ident=1>Reuse the set of 1 PIVias for pin <link type=LOCATION x=0.1385 y=0.088725>C12.1</link>.</debug>
+<warning ident=1>Pin <link type=LOCATION x=0.1385 y=0.090275>C12.2</link> shares its mounting with other pins.</warning>
+<debug ident=1>Reuse the set of 1 PIVias for pin <link type=LOCATION x=0.1385 y=0.090275>C12.2</link>.</debug>
+<debug ident=1>Guess capacitor body width 0.775 mm as fraction of length</debug>
+<header>Processing decoupling capacitor <link type=LOCATION x=0.1253 y=0.084125>C21</link>, mounted on bottom.</header>
+<warning ident=1>Pin <link type=LOCATION x=0.1253 y=0.084125>C21.1</link> shares its mounting with other pins.</warning>
+<debug ident=1>The set of 1 PIVias has been created for pin <link type=LOCATION x=0.1253 y=0.084125>C21.1</link>.</debug>
+<debug ident=1>The set of 1 PIVias has been created for pin <link type=LOCATION x=0.1253 y=0.085675>C21.2</link>.</debug>
+<debug ident=1>Guess capacitor body width 0.775 mm as fraction of length</debug>
+<header>Processing decoupling capacitor <link type=LOCATION x=0.1253 y=0.082675>C22</link>, mounted on bottom.</header>
+<warning ident=1>Pin <link type=LOCATION x=0.1253 y=0.082675>C22.1</link> shares its mounting with other pins.</warning>
+<debug ident=1>Reuse the set of 1 PIVias for pin <link type=LOCATION x=0.1253 y=0.082675>C22.1</link>.</debug>
+<debug ident=1>The set of 1 PIVias has been created for pin <link type=LOCATION x=0.1253 y=0.081125>C22.2</link>.</debug>
+<debug ident=1>Guess capacitor body width 0.775 mm as fraction of length</debug>
+<header>Processing decoupling capacitor <link type=LOCATION x=0.145275 y=0.08715>C26</link>, mounted on top.</header>
+<warning ident=1>Pin <link type=LOCATION x=0.145275 y=0.08715>C26.1</link> shares its mounting with other pins.</warning>
+<debug ident=1>The set of 1 PIVias has been created for pin <link type=LOCATION x=0.145275 y=0.08715>C26.1</link>.</debug>
+<debug ident=1>The set of 1 PIVias has been created for pin <link type=LOCATION x=0.143725 y=0.08715>C26.2</link>.</debug>
+<debug ident=1>Guess capacitor body width 0.775 mm as fraction of length</debug>
+<header>Processing decoupling capacitor <link type=LOCATION x=0.145275 y=0.0859>C27</link>, mounted on top.</header>
+<warning ident=1>Pin <link type=LOCATION x=0.145275 y=0.0859>C27.1</link> shares its mounting with other pins.</warning>
+<debug ident=1>Reuse the set of 1 PIVias for pin <link type=LOCATION x=0.145275 y=0.0859>C27.1</link>.</debug>
+<debug ident=1>The set of 1 PIVias has been created for pin <link type=LOCATION x=0.143725 y=0.0859>C27.2</link>.</debug>
+<debug ident=1>Guess capacitor body width 0.775 mm as fraction of length</debug>
+<message></message>
+<debug>Start cleaning ViaCollector geometry - allocated:969043968 address space used:1387347968 b</debug>
+<debug>Start FD analysis - allocated:969043968 address space used:1387347968 b</debug>
+<info>Start creating decoupling capacitors report...</info>
+<info>Getting power-net elements...</info>
+<debug>Total 13 decoupling capacitors passed for simulation</debug>
+<debug>13 decoupling capacitors created for decomposition</debug>
+<info>Running report engine</info>
+<debug>Decoupling C6: failed to define connectivity to area at (0.120225, 0.08175) layer SIG1</debug>
+<header>Processing decoupling capacitor <link x=0.138362 y=0.0782375>C3</link></header>
+<debug ident=1>Analyzing decoupling C3</debug>
+<info ident=1>Using user-supplied ESL value</info>
+<header>Processing decoupling capacitor <link x=0.1123 y=0.083525>C4</link></header>
+<debug ident=1>Analyzing decoupling C4</debug>
+<info ident=1>Using user-supplied ESL value</info>
+<header>Processing decoupling capacitor <link x=0.121 y=0.08175>C6</link></header>
+<debug ident=1>Analyzing decoupling C6</debug>
+<warning ident=1>Failed to create decoupling capacitor model; using simplified model</warning>
+<header>Processing decoupling capacitor <link x=0.126201 y=0.0887139>C7</link></header>
+<debug ident=1>Analyzing decoupling C7</debug>
+<info ident=1>Using user-supplied ESL value</info>
+<header>Processing decoupling capacitor <link x=0.126201 y=0.0887139>C8</link></header>
+<debug ident=1>Analyzing decoupling C8</debug>
+<info ident=1>Using user-supplied ESL value</info>
+<header>Processing decoupling capacitor <link x=0.127329 y=0.0786238>C9</link></header>
+<debug ident=1>Analyzing decoupling C9</debug>
+<info ident=1>Using user-supplied ESL value</info>
+<header>Processing decoupling capacitor <link x=0.140437 y=0.0894799>C10</link></header>
+<debug ident=1>Analyzing decoupling C10</debug>
+<info ident=1>Using user-supplied ESL value</info>
+<header>Processing decoupling capacitor <link x=0.1136 y=0.083525>C11</link></header>
+<debug ident=1>Analyzing decoupling C11</debug>
+<info ident=1>Using user-supplied ESL value</info>
+<header>Processing decoupling capacitor <link x=0.140437 y=0.0894799>C12</link></header>
+<debug ident=1>Analyzing decoupling C12</debug>
+<info ident=1>Using user-supplied ESL value</info>
+<header>Processing decoupling capacitor <link x=0.1253 y=0.0845375>C21</link></header>
+<debug ident=1>Analyzing decoupling C21</debug>
+<info ident=1>Using user-supplied ESL value</info>
+<header>Processing decoupling capacitor <link x=0.1253 y=0.0822625>C22</link></header>
+<debug ident=1>Analyzing decoupling C22</debug>
+<info ident=1>Using user-supplied ESL value</info>
+<header>Processing decoupling capacitor <link x=0.144762 y=0.086225>C26</link></header>
+<debug ident=1>Analyzing decoupling C26</debug>
+<info ident=1>Using user-supplied ESL value</info>
+<header>Processing decoupling capacitor <link x=0.144762 y=0.0856>C27</link></header>
+<debug ident=1>Analyzing decoupling C27</debug>
+<info ident=1>Using user-supplied ESL value</info>
+<info>Report created successfully</info>
+<info>CSV DRC spreadsheet saved to file <link type=DRC_SPREADSHEET>C:\Users\Pierre-Anthony\Documents\Roboty\HW\Roboty_rev2_\Decoupling_Results_Jan-31-2024_22h-44m\Roboty_rev1.csv</link></info>
+<info>XLS DRC spreadsheet saved to file <link type=DRC_SPREADSHEET>C:\Users\Pierre-Anthony\Documents\Roboty\HW\Roboty_rev2_\Decoupling_Results_Jan-31-2024_22h-44m\Roboty_rev1.xls</link></info>
+<debug>Simulation data is cleared out - allocated:994164736 address space used:1429229568 b</debug>

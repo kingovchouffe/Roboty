@@ -1,0 +1,61 @@
+2024-01-14 14:23:51 16496     [INFO] ****** HyperLynx VX2.10 build 19246144 
+2024-01-14 14:23:51 16496     [INFO]        C:\MentorGraphics\HLVX.2.10\SDD_HOME\hyperlynx64\BSW.EXE /dde 
+2024-01-14 14:23:51 16496     [INFO] Opening Project C:\Users\Pierre-Anthony\Documents\Roboty\HW\Roboty_rev2_\Roboty_rev1.hyp
+2024-01-14 14:23:51 16496     [INFO] Opened Board: Roboty_rev1.hyp <C:\Users\Pierre-Anthony\Documents\Roboty\HW\Roboty_rev2_\>
+2024-01-14 14:23:51 16496  [WARNING] Warning: One or more nets are completely unrouted.  Do you want to connect them using "virtual", Manhattan-style routing?  (Does not apply to power-supply nets.)  Note: This process will begin by determining the detailed routing status of every net on the board, which can be very time-consuming (especially if some power-supply nets are mistakenly identified as signal nets).  If you prefer to skip this process now, you can run it later using Edit > Connect Nets with Manhattan Routing. - The "Yes" button was selected
+2024-01-14 14:27:32 16496  [WARNING] No IC output on selected net (i.e., no driver). Stopping.
+2024-01-14 14:28:24 16496    [ERROR] Open file: File "C:\Users\Pierre-Anthony\Documents\Roboty\HW\Roboty_rev2_\Roboty_rev1.ref" cannot be opened Starting with new file
+2024-01-14 14:31:02 16496     [INFO] REF-File Editor: Save changes to REF file before continue?  YES: save changes NO: discard changes - The "Yes" button was selected
+2024-01-14 14:32:45 16496  [WARNING] No driver on selected net. Choose a driver now? - The "No" button was selected
+2024-01-14 14:33:25 16496  [WARNING] No driver on selected net. Choose a driver now? - The "No" button was selected
+2024-01-14 14:38:12 16496     [INFO] Generated HyperLynx IC Model Index: C:\MentorGraphics\HLVX.2.10\SDD_HOME\hyperlynx64\Libs\HyperLynxIcModels.csv
+2024-01-14 14:43:56 16496     [INFO] : Simulation messages for net: /I2C_SCL
+2024-01-14 14:43:56 16496  [WARNING] Model Builder: DC failed, trying to use the step limiting in the Newton method
+2024-01-14 15:05:06 16496  [WARNING] Current waveforms: Recording of buffer currents is turned off in Setup/Simulation Control. Do you want to turn it on?  (You need to rerun simulation to update current waveforms). - The "No" button was selected
+2024-01-14 15:05:52 16496     [INFO] : Simulation messages for net: /I2C_SCL
+2024-01-14 15:05:52 16496  [WARNING] Model Builder: DC failed, trying to use the step limiting in the Newton method
+2024-01-14 15:06:03 16496     [INFO] : Simulation messages for net: /I2C_SCL
+2024-01-14 15:06:03 16496  [WARNING] Model Builder: DC failed, trying to use the step limiting in the Newton method
+2024-01-14 15:06:41 16496     [INFO] : Simulation messages for net: /I2C_SCL
+2024-01-14 15:06:41 16496  [WARNING] Model Builder: DC failed, trying to use the step limiting in the Newton method
+2024-01-14 15:07:12 16496     [INFO] : Simulation messages for net: /I2C_SCL
+2024-01-14 15:07:12 16496  [WARNING] Model Builder: DC failed, trying to use the step limiting in the Newton method
+2024-01-14 15:07:27 16496     [INFO] : Simulation messages for net: /I2C_SCL
+2024-01-14 15:07:27 16496  [WARNING] Model Builder: DC failed, trying to use the step limiting in the Newton method
+2024-01-14 15:09:56 16496     [INFO] : Simulation messages for net: /I2C_SCL
+2024-01-14 15:09:56 16496  [WARNING] Model Builder: DC failed, trying to use the step limiting in the Newton method
+2024-01-14 15:24:35 16496     [INFO] : Simulation messages for net: /I2C_SCL
+2024-01-14 15:24:35 16496  [WARNING] Model Builder: DC failed, trying to use the step limiting in the Newton method
+2024-01-14 15:24:37 16496     [INFO] : Simulation messages for net: /I2C_SCL
+2024-01-14 15:24:37 16496  [WARNING] Model Builder: DC failed, trying to use the step limiting in the Newton method
+2024-01-14 15:25:11 16496     [INFO] : Simulation messages for net: /I2C_SCL
+2024-01-14 15:25:11 16496  [WARNING] Model Builder: DC failed, trying to use the step limiting in the Newton method
+2024-01-14 15:26:35 16496     [INFO] : Simulation messages for net: /I2C_SCL
+2024-01-14 15:26:35 16496  [WARNING] Model Builder: DC failed, trying to use the step limiting in the Newton method
+2024-01-14 15:31:54 16496  [WARNING] No IC output on selected net (i.e., no driver). Stopping.
+2024-01-14 16:10:54 16496     [INFO] Close HyperLynx Session: Design file: Roboty_rev1.hyp Save session edits (Yes/No)?  YES -> save, then close NO  -> close - The "Yes" button was selected
+2024-01-14 16:10:57 16496     [INFO] Closing Design: Roboty_rev1.hyp
+2024-01-14 16:10:59 16496     [INFO] ****** Closing HyperLynx 
+2024-01-31 22:39:51 3396     [INFO] ****** HyperLynx VX2.10 build 19246144 
+2024-01-31 22:39:51 3396     [INFO]        C:\MentorGraphics\HLVX.2.10\SDD_HOME\hyperlynx64\bsw.exe 
+2024-01-31 22:40:14 3396     [INFO] Opening Project C:\Users\Pierre-Anthony\Documents\Roboty\HW\Roboty_rev2_\Roboty_rev1.hyp
+2024-01-31 22:40:17 3396     [INFO] Opened Board: Roboty_rev1.hyp <C:\Users\Pierre-Anthony\Documents\Roboty\HW\Roboty_rev2_\>
+2024-01-31 22:40:17 3396  [WARNING] Warning: One or more nets are completely unrouted.  Do you want to connect them using "virtual", Manhattan-style routing?  (Does not apply to power-supply nets.)  Note: This process will begin by determining the detailed routing status of every net on the board, which can be very time-consuming (especially if some power-supply nets are mistakenly identified as signal nets).  If you prefer to skip this process now, you can run it later using Edit > Connect Nets with Manhattan Routing. - The "Yes" button was selected
+2024-01-31 22:41:41 3396     [INFO] This design's .HYP file was created by a PCB translator that did not record whether the physical information is sufficiently detailed for power-integrity analysis (especially metal areas and via clearances).  Most likely, the translator was an older version not upgraded for PI usage.  PI simulation may therefore produce less-accurate results.
+2024-01-31 22:42:33 3396    [ERROR] DC Engine failed: No VRMs found in power net
+2024-01-31 22:44:20 3396     [INFO] Generating HTML report...
+2024-01-31 22:44:20 3396     [INFO] Traceback (most recent call last):
+2024-01-31 22:44:20 3396     [INFO]   File "C:\MentorGraphics\HLVX.2.10\SDD_HOME\hyperlynx64\Scripts/createDecouplingReport.py", line 268, in <module>
+2024-01-31 22:44:20 3396     [INFO]     main()
+2024-01-31 22:44:20 3396     [INFO]   File "C:\MentorGraphics\HLVX.2.10\SDD_HOME\hyperlynx64\Scripts/createDecouplingReport.py", line 34, in main
+2024-01-31 22:44:20 3396     [INFO]     report, report_dir, board = setup_report(log_file, znp_file, mode, target_impedance)
+2024-01-31 22:44:20 3396     [INFO]   File "C:\MentorGraphics\HLVX.2.10\SDD_HOME\hyperlynx64\Scripts/createDecouplingReport.py", line 68, in setup_report
+2024-01-31 22:44:20 3396     [INFO]     assert os.path.isfile(csv_file), 'No valid CSV analysis report file found: {}'.format(csv_file)
+2024-01-31 22:44:20 3396     [INFO] AssertionError: No valid CSV analysis report file found: 
+2024-01-31 22:44:20 3396     [INFO] HTML report creation failed. Check the Output window for more details.
+2024-01-31 22:44:53 3396     [INFO] Generating HTML report...
+2024-01-31 22:44:53 3396     [INFO] Opening report...
+2024-01-31 22:44:53 3396     [INFO] C:\Users\Pierre-Anthony\Documents\Roboty\HW\Roboty_rev2_\Decoupling_Results_Jan-31-2024_22h-44m\Roboty_rev1_Quick_Decoupling_Report>start "" C:\MentorGraphics\HLVX.2.10\SDD_HOME\hyperlynx64\EM\nWaveHL\nwjs/nw --nwapp="." --user-data-dir=".\nw_data" 
+2024-01-31 22:46:59 3396     [INFO] Close HyperLynx Session: Design file: Roboty_rev1.hyp Save session edits (Yes/No)?  YES -> save, then close NO  -> close - The "Yes" button was selected
+2024-01-31 22:47:02 3396     [INFO] Closing Design: Roboty_rev1.hyp
+2024-01-31 22:47:03 3396     [INFO] ****** Closing HyperLynx 

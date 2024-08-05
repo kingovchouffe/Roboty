@@ -536,7 +536,7 @@ int32_t lis2mdl_block_data_update_set(lis2mdl_ctx_t *ctx, uint8_t val)
   int32_t ret;
 
   ret = lis2mdl_read_reg(ctx, LIS2MDL_CFG_REG_C, (uint8_t*)&reg, 1);
-  
+
   if(ret == 0){
     reg.bdu = val;
     ret = lis2mdl_write_reg(ctx, LIS2MDL_CFG_REG_C, (uint8_t*)&reg, 1);
